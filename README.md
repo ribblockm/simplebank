@@ -1,5 +1,5 @@
 # bank_backend
-A simple but *consistent* backend for a back, written in Clojure
+A simple but *consistent* backend for a back, written in Go
 
 In this application, we will create a back in which we:
 - create and manage accounts
@@ -11,8 +11,7 @@ In this application, we will create a back in which we:
 
 ## 2. Migrations
 Migrations are a crucial part of a db management.
-We plan to use the Migratus, a general migration framework written in Clojure.
-But for now we'll use a cli and golang library, `golang-migrate`.
+We'll use a cli and golang library, `golang-migrate`.
 
 We run
 `migrate create -ext sql -dir db/migration -seq init_schema` to create the files for `up` and `down` migrations.
